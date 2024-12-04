@@ -15,7 +15,8 @@
 
 ## Technologies Used 🛠️
 
-- **React.js**: For building the user interface.  
+- **React.js**: For building the user interface.
+- **Bootstrap**: For creating responsive and visually appealing designs.  
 - **CSS**: For styling components.  
 - **JavaScript**: For implementing functionality.  
 
