@@ -1,18 +1,18 @@
 .App {
   text-align: center;
 }
-/* Importing the Arabic Pixel font */
+
 @font-face {
   font-family: 'PixelArabic';
   src: url('C:\gaming\public\Raqami.ttf') format('truetype');
 }
 
-/* Applying the font globally */
+
 *{
   font-family: 'PixelArabic', sans-serif;
 }
 
-/* Layout Container */
+
 .main-layout {
   display: flex;
   flex-direction: column;
@@ -20,18 +20,17 @@
 }
 
 
-/* Navbar */
+
 .main-header {
-  background-color: #220226a1; /* Light background color for the navbar */
-  padding: 10px 20px; /* Add some padding for spacing */
+  background-color: #220226a1; 
+  padding: 10px 20px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 2, 2, 0.548); /* Subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 2, 2, 0.548); 
 
 }
 
-/* Navigation Links */
 .nav-links {
   display: flex;
   list-style: none;
@@ -43,25 +42,23 @@
 
 .nav-link {
   text-decoration: none;
-  color: #fefefe; /* Lighter color for links */
+  color: #fefefe; 
   font-size: 18px;
-  padding: 10px 15px; /* Make the link look like a button */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  padding: 10px 15px;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
-/* Link hover effect */
 .nav-link:hover {
-  background-color: #0099c8; /* Blue background on hover */
-  color: white; /* Change text color to white */
+  background-color: #0099c8; 
+  color: white; 
 }
 
-/* Active link effect (if needed) */
 .nav-link:active {
-  background-color: #0056b3; /* Darker blue when clicked */
+  background-color: #0056b3; 
 }
 
-/* Link underline effect */
+
 .nav-link::after {
   content: '';
   position: absolute;
@@ -73,7 +70,7 @@
   transition: width 0.3s ease;
 }
 
-/* Underline on hover */
+
 .nav-link:hover::after {
   width: 100%;
 }
@@ -81,34 +78,32 @@
 
 
 
-/* Main Content Styles */
 .main-content {
-  flex:1; /* Ensures main content takes up available space */
+  flex:1; 
   padding: 20px;
 }
 .footer {
   display: flex;
-  align-items: center;  /* Vertically center the items */
-  justify-content: center;  /* Center all items horizontally */
-  background-color: rgba(64, 4, 74, 0.411);  /* Dark background with transparency */
+  align-items: center;  
+  justify-content: center;  
+  background-color: rgba(64, 4, 74, 0.411);  
   color: white;
   padding: 10px 0;
 }
 
 .rights-text {
-  margin: 0 10px;  /* Add some space between the elements */
+  margin: 0 10px;  
   font-size: 14px;
 }
 
 .footer-logo {
-  width: 70px;  /* Adjust logo size */
+  width: 70px;  
   height: auto;
-  margin: 0 5px;  /* Space around the logo */
+  margin: 0 5px; 
 }
 
 
 
-/* Optional - Hover Effects for Cart Icon */
 .cart-link:hover {
   color: #f39c12;
 }
@@ -125,13 +120,13 @@
 
 
 .main-background {
-  background-image: url('C:\gaming\public\BestBG2.gif'); /* Adjust path if needed */
-  background-size: cover; /* Makes the GIF cover the entire container */
-  height: 111vh; /* Full viewport height */
+  background-image: url('C:\gaming\public\BestBG2.gif'); 
+  background-size: cover;
+  height: 111vh; 
 }
 
 
-/* Neon Text Effect */
+
 h1{
   font-family: 'PixelArabic', sans-serif;
   font-size: 50px;
@@ -153,7 +148,6 @@ color: #fff;
   animation: neon-animation 1.5s infinite alternate;
 }
 
-/* Neon Glow */
 h1::before {
   content: '';
   position: absolute;
@@ -166,7 +160,6 @@ h1::before {
   filter: blur(10px);
   animation: neon-glow 1.5s infinite alternate;
 }
-/* Pulsing Animation for Neon Glow */
 @keyframes neon-animation {
   0% {
       text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 75px #6b00ad;
@@ -176,7 +169,6 @@ h1::before {
   }
 }
 
-/* Animation for Neon Glow Effect */
 @keyframes neon-glow {
   0% {
       opacity: 0.7;
@@ -186,7 +178,6 @@ h1::before {
   }
 }
 
-/* Animated Border */
 @keyframes border-animation {
   0% {
     border-color: #ff00ff;
@@ -205,54 +196,49 @@ h1::before {
   }
 }
 
-/* Badge Style */
 .badge {
   font-family: 'PixelArabic', sans-serif;
-  background-color: rgba(45, 94, 162, 0.416); /* Semi-transparent background */
+  background-color: rgba(45, 94, 162, 0.416); 
   color: #fff;
-  padding: 50px 40px; /* Space inside the badge */
-  border-radius: 15px; /* Rounded corners */
+  padding: 50px 40px; 
+  border-radius: 15px; 
   text-align: center;
   font-weight: bold;
   margin-top: 50px;
   margin-left: 700px;
   display: block;
-  border: 5px solid #ff00ff; /* Initial border color */
-  animation: border-animation 4s infinite; /* Animated border */
+  border: 5px solid #ff00ff; 
+  animation: border-animation 4s infinite; 
 }
 
-/* h1 inside the Badge */
 .badge h1 {
   font-family: 'PixelArabic', sans-serif;
-  margin: 0; /* Remove default margin */
-  font-size: 36px; /* Size of the heading */
-  text-transform: none; /* Ensure the text stays in its original case */
+  margin: 0; 
+  font-size: 36px; 
+  text-transform: none; 
 }
 
-/* Button Style */
 .button {
-  background-color: #c11089af; /* Blue background */
+  background-color: #c11089af; 
   color: white;
-  padding: 5px 15px; /* Adjusted padding for better button size */
+  padding: 5px 15px;
   font-size: 18px;
-  border: 3px solid #007bff; /* Initial border color */
+  border: 3px solid #007bff; 
   border-radius: 8px;
   cursor: crosshair;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   transition: background-color 0.3s ease;
   display: inline-block; 
   margin: 0 auto;
   margin-top: 15px;
   margin-left: 700px;
-  animation: button-border-animation 4s infinite; /* Animated border */
+  animation: button-border-animation 4s infinite; 
 }
 
-/* Hover State for Button */
 .button:hover {
-  background-color: #13aebc; /* Darker blue on hover */
+  background-color: #13aebc; 
 }
 
-/* Keyframes for Button Border Animation */
 @keyframes button-border-animation {
   0% {
     border-color: #007bff;
@@ -273,39 +259,36 @@ h1::before {
 
 
 
-/* App.css */
-
-/* Set background for the entire game list container */
 
 .main-background2{
-  background-image: url('C:\gaming\public\DarkPurpleHeaderGif-ezgif.com-speed.gif'); /* Adjust path if needed */
-  background-size:contain; /* Makes the GIF cover the entire container */
-  height:auto /* Full viewport height */
+  background-image: url('C:\gaming\public\DarkPurpleHeaderGif-ezgif.com-speed.gif'); 
+  background-size:contain; 
+  height:auto;
 }
-/* Game Card Styling */
+
 .game-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100px;
   flex-grow: 1;
-  background-color: rgba(100, 0, 109, 0); /* اللون الأساسي */
+  background-color: rgba(100, 0, 109, 0); 
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: rgb(255, 255, 255);
-  opacity: 0.8; /* الشفافية للكارد */
-  position: relative; /* لضمان عدم تأثير الشفافية على المحتوى */
+  opacity: 0.8; 
+  position: relative; 
   
   
 }
 
-/* Game Card Hover */
+
 .game-card:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
-/* Game Image Styling */
+
 .game-img {
   height: 200px;
   object-fit: cover;
@@ -313,7 +296,6 @@ h1::before {
   border-top-right-radius: 12px;
 }
 
-/* Game Card Body - Pixel Art Styling */
 .game-card .card-body {
   display: flex;
   flex-direction: column;
@@ -350,20 +332,17 @@ h1::before {
   transform: scale(1.05);
 }
 
-/* Game Title */
 .game-card .card-body .card-title {
   font-size: 1.15rem;
   font-weight: bold;
   color: rgb(242, 202, 3);
 }
 
-/* Price and Rating */
 .game-card .card-body p {
   font-size: 0.9rem;
   color: rgb(227, 244, 228);
 }
 
-/* Responsive Grid */
 @media (max-width: 767px) {
   .game-card {
     min-height: 250px;
@@ -380,11 +359,10 @@ h1::before {
 
 .cart-link {
   text-decoration: none;
-  font-size: 20px; /* تغيير حجم النص */
+  font-size: 20px; 
   color: #000;
-  font-weight: bold; /* تغيير الوزن للنص */
+  font-weight: bold; 
 }
-/* Cart Page Styling */
 .cart-page {
   padding-left: 300px;
   padding-right: 300px;
@@ -404,29 +382,27 @@ h1::before {
   text-align: center;
 }
 
-/* Cart Item Card */
 .cart-item-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 250px;
-  background-color: rgba(100, 0, 109, 0.8); /* الشفافية */
+  background-color: rgba(100, 0, 109, 0.8); 
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: #fff;
-  opacity: 0.85; /* الشفافية للكارد */
+  opacity: 0.85; 
   position: relative;
   margin-bottom: 15px;
   padding: 15px;
 }
 
-/* Cart Item Header */
 .cart-item-card-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  background-color: rgba(66, 1, 67, 0.8); /* لون داكن مع شفافية */
+  background-color: rgba(66, 1, 67, 0.8); 
   border-radius: 12px 12px 0 0;
 }
 
@@ -451,14 +427,13 @@ h1::before {
   text-align: center;
 }
 
-/* Cart Item Body */
 .cart-item-card-body {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* توسيط المحتوى عموديًا */
-  align-items: center; /* توسيط المحتوى أفقيًا */
+  justify-content: center; 
+  align-items: center;
   padding: 10px;
-  background-color: rgba(66, 1, 67, 0.4); /* خلفية شفافة للمحتوى */
+  background-color: rgba(66, 1, 67, 0.4); 
   border: 4px solid rgb(65, 25, 70);
 }
 
@@ -500,7 +475,6 @@ h1::before {
   background-color: #d93c2b;
 }
 
-/* Cart Total Price */
 .cart-total-price-container {
   margin-top: 20px;
   text-align: center;
@@ -512,7 +486,6 @@ h1::before {
   color: #548AC1;
 }
 
-/* Back to Game List Button */
 .back-to-game-list-container {
   margin-top: 30px;
   text-align: center;
@@ -532,7 +505,6 @@ h1::before {
   background-color: #548AC1;
 }
 
-/* Checkout Button */
 .checkout-container {
   text-align: center;
   margin-top: 20px;
@@ -551,7 +523,6 @@ h1::before {
   background-color: #d93c2b;
 }
 
-/* Responsive Styling */
 @media (max-width: 1024px) {
   .cart-page {
     padding-left: 20px;
@@ -606,12 +577,11 @@ h1::before {
 
 
 .bill-back {
-  background-image: url('C:\gaming\public\DarkPurpleHeaderGif-ezgif.com-speed.gif'); /* Adjust path if needed */
-  background-size:contain; /* Makes the GIF cover the entire container */
-  height:auto /* Full viewport height */
+  background-image: url('C:\gaming\public\DarkPurpleHeaderGif-ezgif.com-speed.gif'); 
+  background-size:contain; 
+  height:auto;
 
 }
-/* Bill Page Styling */
 .bill-container {
   width: 40%;
   margin: 0 auto;
@@ -681,7 +651,6 @@ hr {
   margin-top: 10px;
 }
 
-/* Responsive Styling */
 @media (max-width: 1024px) {
   .bill-container {
     width: 60%;
@@ -740,9 +709,6 @@ hr {
 
 
 
-/* Contact.css */
-
-/* Main container specific to contact page */
 .contact-page {
   max-width: 600px;
   margin: 50px auto;
@@ -754,7 +720,6 @@ hr {
  
 }
 
-/* Title styling */
 .contact-title {
   text-align: center;
   font-size: 36px;
@@ -763,7 +728,6 @@ hr {
   
 }
 
-/* Success message */
 .contact-success {
   color: #4CAF50;
   font-weight: bold;
@@ -771,20 +735,17 @@ hr {
   margin-bottom: 15px;
 }
 
-/* Form container */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Form group styling */
 .contact-form-group {
   display: flex;
   flex-direction: column;
 }
 
-/* Labels */
 .contact-label {
   font-size: 18px;
   font-weight: bold;
@@ -792,7 +753,6 @@ hr {
   margin-bottom: 8px;
 }
 
-/* Inputs and Textarea */
 .contact-input,
 .contact-textarea {
   background-color: #33333365;
@@ -807,13 +767,12 @@ hr {
 
 .contact-input:focus,
 .contact-textarea:focus {
-  border-color: #00ffcc; /* Neon accent on focus */
+  border-color: #00ffcc; 
   outline: none;
 }
 
-/* Submit Button */
 .contact-submit-btn {
-  background-color: #ff007f; /* Neon pink */
+  background-color: #ff007f; 
   color: white;
   padding: 15px 30px;
   font-size: 18px;
@@ -825,18 +784,16 @@ hr {
 }
 
 .contact-submit-btn:hover {
-  background-color: #ff00c3; /* Light pink on hover */
+  background-color: #ff00c3; 
 
 }
 
-/* Textarea styling */
 .contact-textarea {
   height: 150px;
   resize: none;
   font-family: 'Arial', sans-serif;
 }
 
-/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
   .contact-page {
     width: 90%;
@@ -848,7 +805,7 @@ hr {
   }
 }
 
-/* الصفحة الرئيسية */
+
 .about-page {
   max-width: 1200px;
   margin: 50px auto;
@@ -859,7 +816,6 @@ hr {
   color: #fff;
 }
 
-/* العنوان الرئيسي */
 .about-title {
   text-align: center;
   font-size: 36px;
@@ -867,25 +823,22 @@ hr {
   margin-bottom: 20px;
 }
 
-/* حاوية الأقسام */
 .about-sections-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px; /* المسافة بين الأقسام */
+  gap: 30px; 
   justify-content: space-between;
 }
 
-/* تنسيق الأقسام */
 .about-section {
   background-color: #33333365;
   padding: 15px;
   border-radius: 8px;
-  width: calc(50% - 15px); /* العرض 50% لكل قسم مع ترك فراغ بينهما */
+  width: calc(50% - 15px); 
   margin-bottom: 20px;
   box-sizing: border-box;
 }
 
-/* العناوين الفرعية */
 .section-title {
   font-size: 24px;
   font-weight: bold;
@@ -893,7 +846,6 @@ hr {
   margin-bottom: 10px;
 }
 
-/* النص داخل الأقسام */
 .section-text {
   font-size: 18px;
   color: #dcdcdc;
@@ -901,7 +853,6 @@ hr {
   margin-bottom: 15px;
 }
 
-/* تصميم استجابة للأجهزة الصغيرة */
 @media (max-width: 768px) {
   .about-page {
     width: 90%;
@@ -958,9 +909,6 @@ hr {
 
 
 
-/* styles.css */
-
-/* Neon Border Animation for Badge */
 @keyframes neon-border-animation {
   0% {
     border-color: #ff00ff;
@@ -979,7 +927,6 @@ hr {
   }
 }
 
-/* Neon Border Animation for Button */
 @keyframes neon-button-border-animation {
   0% {
     border-color: #ff00ff;
@@ -998,75 +945,68 @@ hr {
   }
 }
 
-/* General Background Style */
 .test-background {
-  height: 111vh; /* Full viewport height */
+  height: 111vh;
 }
 
-/* Laptop-Specific Background */
 .test-laptop-background {
-  background-image: url('C:\gaming\public\BestBG2.gif'); /* Adjust path */
+  background-image: url('C:\gaming\public\BestBG2.gif'); 
   background-size: cover;
 }
 
-/* Mobile-Specific Background */
 .test-mobile-background {
-  background-image: url('C:\gaming\public\ios3.gif'); /* Adjust path */
+  background-image: url('C:\gaming\public\ios3.gif'); 
   background-size: cover;
 }
 
-/* Badge Style */
 .test-badge {
   font-family: 'PixelArabic', sans-serif;
-  background-color: rgba(45, 94, 162, 0.416); /* Semi-transparent background */
+  background-color: rgba(45, 94, 162, 0.416); 
   color: #fff;
-  padding: 10px 30px; /* Space inside the badge */
-  border-radius: 15px; /* Rounded corners */
+  padding: 10px 30px; 
+  border-radius: 15px; 
   text-align: center;
   font-weight: bold;
   display: block;
-  border: 5px solid #ff00ff; /* Initial border color */
-  animation: neon-border-animation 4s infinite; /* Neon animated border */
+  border: 5px solid #ff00ff; 
+  animation: neon-border-animation 4s infinite; 
   position: absolute;
 }
 
-/* Button Style */
 .test-button {
-  background-color: #c11089af; /* Blue background */
+  background-color: #c11089af; 
   color: white;
-  padding: 5px 15px; /* Adjusted padding for better button size */
+  padding: 5px 15px; 
   font-size: 18px;
-  border: 3px solid #007bff; /* Initial border color */
+  border: 3px solid #007bff; 
   border-radius: 8px;
   cursor: pointer;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
   transition: background-color 0.3s ease;
   display: inline-block; 
-  animation: neon-button-border-animation 4s infinite; /* Animated border for button */
+  animation: neon-button-border-animation 4s infinite; 
   position: absolute;
 }
 
-/* Hover State for Button */
 .test-button:hover {
-  background-color: #13aebc; /* Change to a different color on hover */
-  border-color: #00ffff; /* Change border color on hover */
-  color: #fff; /* Optional: Change text color */
+  background-color: #13aebc; 
+  border-color: #00ffff; 
+  color: #fff; 
 }
 
-/* Adjust Badge and Button for Phones */
 @media (max-width: 768px) {
   .test-badge {
-    padding: 6px 10px; /* Reduce padding for smaller screens */
+    padding: 6px 10px; 
     margin-top: 1px;
-    font-size: 16px; /* Smaller text inside the badge */
-    width: 90%; /* Shrink badge width */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -10%); /* Adjust positioning */
-    border-radius: 10px; /* Slightly smaller rounded corners */
+    font-size: 16px; 
+    width: 90%; 
+    left: 50%; 
+    transform: translate(-50%, -10%); 
+    border-radius: 10px; 
   }
 
   .test-badge h1 {
-    font-size: 22px; /* Adjust title size for smaller badges */
+    font-size: 22px; 
   }
 
   .test-button {
@@ -1076,22 +1016,21 @@ hr {
   }
 }
 
-/* Text Styles for Laptops */
-@media (min-width: 769px) { /* Applies to devices wider than 768px */
+@media (min-width: 769px) { 
   .test-badge {
-    top: 21%; /* Adjust vertical position */
-    left: 70%; /* Adjust horizontal position */
+    top: 21%; 
+    left: 70%;
     transform: translate(-30%, -20%);
   }
 
   .test-badge h1 {
-    font-size: 32px; /* Larger text for laptops */
-    white-space: nowrap; /* Prevents wrapping */
+    font-size: 32px;
+    white-space: nowrap; 
     direction: rtl;
   }
 
   .test-badge span {
-    font-size: 25px; /* Adjust subtitle size */
+    font-size: 25px; 
   }
 
   .test-button {
@@ -1101,9 +1040,8 @@ hr {
   }
 }
 
-/* h1 inside the Badge */
 .test-badge h1 {
   font-family: 'PixelArabic', sans-serif;
-  margin: 0; /* Remove default margin */
-  text-transform: none; /* Ensure the text stays in its original case */
+  margin: 0; 
+  text-transform: none; 
 }
