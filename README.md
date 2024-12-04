@@ -33,11 +33,6 @@ Check out the live version of the project here:
 
 Contributions are welcome! Feel free to fork the repository and submit a pull request. Suggestions and feedback are greatly appreciated.
 
----
-
-## License 📄
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
