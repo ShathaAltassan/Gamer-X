@@ -16,8 +16,6 @@ const MainLayout = ({ children }) => {
               <li><Link to="/" className="nav-link">الرئيسية</Link></li>
               <li><Link to="/about" className="nav-link">حولنا</Link></li>
               <li><Link to="/contact" className="nav-link">اتصل بنا</Link></li>
-              <li><Link to="/gamelist" className="nav-link"> قائمة الألعاب</Link></li>
-
             </ul>
           </nav>
           <div className="cart-icon">
